@@ -1,0 +1,9 @@
+[submodule "src/bdd_minisat_all"]
+	path = src/bdd_minisat_all
+	url = https://github.com/taboege/bdd_minisat_all
+[submodule "src/bc_minisat_all"]
+	path = src/bc_minisat_all
+	url = https://github.com/taboege/bc_minisat_all
+[submodule "src/nbc_minisat_all"]
+	path = src/nbc_minisat_all
+	url = https://github.com/taboege/nbc_minisat_all

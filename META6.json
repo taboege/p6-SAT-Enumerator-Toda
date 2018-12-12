@@ -1,0 +1,24 @@
+{
+  "name"                    : "SAT::Enumerator::Toda",
+  "version"                 : "0.0.1",
+  "perl"                    : "6.c",
+  "author"                  : "github:taboege",
+  "description"             : "AllSAT solvers based on MiniSAT by Takahisa Toda",
+  "tags"                    : [ ],
+  "license"                 : "Artistic-2.0",
+  "depends"                 : [ ],
+  "build-depends"           : [
+    "make:from<bin>",
+    "gcc:from<bin>"
+  ],
+  "test-depends"            : [ ],
+  "resources"               : [
+    "bdd_minisat_all",
+    "bc_minisat_all",
+    "nbc_minisat_all"
+  ],
+  "provides"                : {
+    "SAT::Enumerator::Toda" : "lib/SAT/Enumerator/Toda.pm6"
+  },
+  "source-url"              : "git://github.com/taboege/p6-SAT-Enumerator-Toda.git"
+}
