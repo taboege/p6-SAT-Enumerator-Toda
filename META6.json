@@ -6,7 +6,9 @@
   "description"             : "AllSAT solvers based on MiniSAT by Takahisa Toda",
   "tags"                    : [ ],
   "license"                 : "Artistic-2.0",
-  "depends"                 : [ ],
+  "depends"                 : [
+    "SAT"
+  ],
   "build-depends"           : [
     "make:from<bin>",
     "gcc:from<bin>"

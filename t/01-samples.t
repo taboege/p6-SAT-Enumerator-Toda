@@ -1,5 +1,5 @@
 use Test;
-use Test::SAT::Enumerator;
+use Test::SAT;
 use SAT::Enumerator::Toda;
 
 plan 3;

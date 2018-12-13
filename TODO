@@ -4,14 +4,4 @@
   + Fix error reporting in the solvers (warn always looks at errno).
   + Add a -q option to the solvers to suppress diagnostics.
 
-  + Unify interfaces. SAT::Enumerator should provide the standard role
-    for AllSAT solvers. Error types should be defined there as well.
-    Taking DIMACS input even overlaps with the other variants of
-    SAT solving.
-  + All these things belong to the SAT module, which also contains
-    Test::SAT::* packages based on the interfaces.
-
   + Configurability. Offer command-line options to callers.
-
-  + Maybe export a sub that hides the object creation and maybe
-    a version that automatically awaits the Promise.
