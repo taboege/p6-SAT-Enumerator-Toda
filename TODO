@@ -1,3 +1,6 @@
+  + Determine how to keep the execute bit on the program when zef is
+    installing it. Then remove the BEGIN hack we're currently doing.
+
   + Examples, documentation.
 
   + Fix error detection.

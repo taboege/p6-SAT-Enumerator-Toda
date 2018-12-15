@@ -41,6 +41,11 @@ and returns a Supply which emits all satisfying assignments as arrays of Bools.
 
 use SAT;
 
+# XXX: Workaround for zef stripping execute bits on resource install.
+BEGIN for <bdd_minisat_all bc_minisat_all nbc_minisat_all> -> $solver {
+    sink with %?RESOURCES{$solver}.IO { .chmod: 0o100 +| .mode }
+}
+
 role SAT::Enumerator::Toda::Generic[$solver] does SAT::Enumerator {
     multi method enumerate (Supply $lines, *% () --> Supply) {
         my $exe = %?RESOURCES{$solver};
