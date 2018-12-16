@@ -67,8 +67,10 @@ role SAT::Enumerator::Toda::Generic[$solver] does SAT::Enumerator {
         }
 
         $out.map({
-            m/^ [ <literal> \s+ ]+ 0 $/;
-            not« $<literal>».starts-with('-')
+            if m/^ [ <literal> \s+ ]+ 0 $/ {
+                not« $<literal>».starts-with('-')
+            }
+            # TODO: Error handling
         })
         # TODO: in a react whenever or supply?
         #die X::SAT::Proc.new(:error($errmsg // "N/A"))
