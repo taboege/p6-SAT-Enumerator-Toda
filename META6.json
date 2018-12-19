@@ -2,7 +2,7 @@
   "name"                    : "SAT::Enumerator::Toda",
   "version"                 : "0.0.1",
   "perl"                    : "6.c",
-  "author"                  : "github:taboege",
+  "authors"                 : "Tobias Boege",
   "description"             : "AllSAT solvers based on MiniSAT by Takahisa Toda",
   "tags"                    : [ ],
   "license"                 : "Artistic-2.0",
@@ -13,7 +13,9 @@
     "make:from<bin>",
     "gcc:from<bin>"
   ],
-  "test-depends"            : [ ],
+  "test-depends"            : [
+    "Test::META"
+  ],
   "resources"               : [
     "bdd_minisat_all",
     "bc_minisat_all",
