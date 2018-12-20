@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/taboege/bc_minisat_all
+	branch = master
+	commit = d3a82ffcee4298fae1179e1487183f6a0a47bbf4
+	parent = dcfd344fb1e6228e474bda8154ce8f51f09ac55c
+	method = merge
+	cmdver = 0.4.0
